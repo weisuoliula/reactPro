@@ -2,16 +2,38 @@ import {
     Login,
     Register,
     Indexshop,
-    Detail
+    Detail,
+    Movie,
+    Sousuo,
 } from "pages"
-/* export const TabBarRoute = [
 
+/**
+ * 带头部的路由
+ */
+export const HeaderRoute=[
+    {
+        path:"/movie",
+        component:Movie,
+        meta:{
+           
+        },
+        icon:"",
+        text:"首页",
+    }
 ];
-
-export const NoTabBarRoute = [
-   
-]; */
-export const Route=[
+/**
+ * 带搜索的路由
+ */
+export const SousuoRoute=[
+    {
+        path:"/sousuo",
+        component:Sousuo,
+        meta:{
+            flag:false,
+        },
+        icon:"",
+        text:"搜索"
+    },
     {
         path:"/shop",
         component:Indexshop,
@@ -44,5 +66,12 @@ export const Route=[
 
 
 
+
+
 /* export const RouteConfig = TabBarRoute.concat(NoTabBarRoute) */
-export const RouteConfig = Route
+export const RouteConfig = HeaderRoute.concat(SousuoRoute)
+
+
+
+
+

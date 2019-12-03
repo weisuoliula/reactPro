@@ -22,7 +22,7 @@ export default class Loading extends Component {
                             <div className="loader-line"></div>
                         </div>
                     </div>
-</div>
+                </div>
             </Load>
         )
     }
