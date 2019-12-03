@@ -34,7 +34,9 @@ export default (routes) => {
 
 
     function childrenMap(childNodes) {
+        
         return <Route path={childNodes.path} key={childNodes.path} render={() => {
+            
             return (
                 <Fragment>
                     <Route component={childNodes.component} />
@@ -42,6 +44,7 @@ export default (routes) => {
                         {
                             childNodes.children.map((child) => {
                                 if (child.children) {
+                                    
                                     return childrenMap(child)
                                 } else {
                                     return isLogin(child)

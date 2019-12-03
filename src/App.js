@@ -6,9 +6,10 @@ export default class App extends Component {
   render() {
     return (
       <Route>
+        
         <Switch>
-          {/* <Redirect from="/" to="/home" exact />
-          {routeEach(RouteConfig)} */}
+          <Redirect from="/" to="/movie" exact />
+          {routeEach(RouteConfig)}
         </Switch>
 
       </Route>
