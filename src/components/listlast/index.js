@@ -57,7 +57,6 @@ class Index extends React.Component {
                        
                         ))
                     }
-                 
                  </div>
             </Steptiao>
         )

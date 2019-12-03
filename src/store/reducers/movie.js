@@ -70,7 +70,7 @@ export default handleActions({
 
     [AsyncTypesousuo]:(state,action)=>{
         let weekStateqiuda=JSON.parse(JSON.stringify(state))
-        weekStateqiuda.data=action.payload.data
+        weekStateqiuda.data=action.payload.data.data
         
         return weekStateqiuda
     },

@@ -4,7 +4,7 @@ export const mapStateToprops=(state)=>({
 })
 
 export const mapDispatchToProps=(dispatch)=>({
-    handleonChange(){
-        dispatch(AsyncActionsousuo())
+    handleonChange(value){
+        dispatch(AsyncActionsousuo(value))
     }
 })
