@@ -3,8 +3,6 @@ import { Route, Redirect, Switch } from "react-router-dom";
 import Cookies from "js-cookie"
 import Layout from "layout"
 export default (routes) => {
-
-
     function isLayout(route) {
         if (route.meta.flag) {
             return (

@@ -7,8 +7,8 @@ export default class App extends Component {
     return (
       <Route>
         <Switch>
-          {/* <Redirect from="/" to="/home" exact />
-          {routeEach(RouteConfig)} */}
+          <Redirect from="/" to="/shop" exact />
+          {routeEach(RouteConfig)}
         </Switch>
 
       </Route>
