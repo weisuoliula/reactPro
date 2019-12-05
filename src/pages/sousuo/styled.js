@@ -63,4 +63,7 @@ export const SousuoHeader = styled.div`
       margin-left:0.1rem;
       margin-top:0.1rem
     }
+    .iconshanchu{
+      font-size:0.25rem;
+    }
 `

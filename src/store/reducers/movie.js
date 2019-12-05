@@ -18,7 +18,8 @@ const defaultState = {
     hd_new_list:[],
     lxrj_list:[],
     qd_list:[],
-    data:[]
+    data:[],
+    value:[]
 }
 
 export default handleActions({
@@ -71,7 +72,7 @@ export default handleActions({
     [AsyncTypesousuo]:(state,action)=>{
         let weekStateqiuda=JSON.parse(JSON.stringify(state))
         weekStateqiuda.data=action.payload.data.data
-        
+        // weekStateqiuda.value=action.payload.value
         return weekStateqiuda
     },
 

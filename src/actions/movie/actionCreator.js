@@ -72,10 +72,10 @@ export const bannerAsyncActionqiuda =()=>{
  * 搜索
  */
 export const AsyncActionsousuo =(value)=>{
-    let weekAction =createAction(AsyncTypesousuo,(data)=>({data:data}))
+    let weekAction =createAction(AsyncTypesousuo,(data,value)=>({data:data,value:value}))
     return async(dispatch)=>{
         let data = await sousuo(value)
-        console.log(data)
-        dispatch(weekAction(data))
+      
+        dispatch(weekAction(data,value))
     }
 }
