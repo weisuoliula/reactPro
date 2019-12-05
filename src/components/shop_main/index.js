@@ -3,6 +3,7 @@ import React, { Fragment, Component } from "react";
 import { Shop_main } from "./style"
 import ShopMain_nav from "../shop_mian_nav"
 // import ShopData from "../shop_main_data"
+import Slider from "../slider"
 class ShopMain extends Component {
     constructor() {
         super()
@@ -22,7 +23,7 @@ class ShopMain extends Component {
                         {/* <ShopData /> */}
                     </div>
                 </Shop_main>
-
+                <Slider/>
 
             </Fragment>
         )

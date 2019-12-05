@@ -59,7 +59,8 @@ export const SousuoRoute=[
         path:"/detail/:id",
         component:Detail,
         meta:{
-            /* flag:true */
+            flag:true,
+            requiredAuth:true
         }
     }
 ]
