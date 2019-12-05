@@ -7,4 +7,7 @@ export const load_tourAsyncType="GOODTOUR_TYPES_LOAD";
 
 //详情
 export const detailType="DETAIL_TYPE"
+//注册
 export const registerType="REGISTER_TYPE"
+//登录
+export const loginType="LOGIN_TYPE"
