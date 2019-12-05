@@ -1,11 +1,12 @@
 import {handleActions} from "redux-actions"
-import {goodAsyncType,loadAsyncType,good_tourAsyncType,load_tourAsyncType,detailType} from "../../actions/goodlist/actionType"
+import {goodAsyncType,loadAsyncType,good_tourAsyncType,load_tourAsyncType,detailType,registerType} from "../../actions/goodlist/actionType"
 const defaultState={
     goodList:[],
     p:1,
     tour_goodList:[],
     p_tour:1,
-    detailList:[]
+    detailList:[],
+    res:''
 }
 export default handleActions({
     [goodAsyncType]:(state,action)=>{
@@ -39,5 +40,12 @@ export default handleActions({
         //console.log(action)
         detailData.detailList=action.payload.data;
         return detailData
-    }
+    },
+    /* [registerType]:(state,action)=>{
+        let registerData=JSON.parse(JSON.stringify(state));
+        //console.log(action)
+        registerData.res=action.payload.data.status;
+       //console.log(registerData.res)
+        return registerData
+    } */
 },defaultState)

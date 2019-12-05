@@ -8,7 +8,7 @@ export default class App extends Component {
       <Route>
         
         <Switch>
-          <Redirect from="/" to="/movie" exact />
+          <Redirect from="/" to="/login" exact />
           {routeEach(RouteConfig)}
         </Switch>
 

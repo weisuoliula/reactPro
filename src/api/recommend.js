@@ -34,3 +34,14 @@ export const registerApi = (username,password) => http.post({
     }
 
 })
+export const loginApi = (username,password) => http.post({
+    url: "/api/users/login",
+    /* headers: {
+        "content-type":"application/x-www-form-urlencoded; "
+    }, */
+    data: {
+        username,
+        password
+    },
+    
+})

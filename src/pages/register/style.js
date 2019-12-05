@@ -35,13 +35,23 @@ export const Register_main = styled.div `
         padding-left:0.1rem;
     }
     div:nth-of-type(3){
-        width: 2.6rem;
+        width: 2rem;
         height: 0.34rem;
         background: #bfbfbf;
         border-radius: 0.2rem 0.2rem;
         text-align: center;
         line-height: 0.34rem;
-        box-shadow: 0 2px 10px 0 #bbb;
-        margin: 0.3rem 0;
+        box-shadow: 0 2px 5px 0 #bbb;
+        margin:0.3rem auto ;
     }
+    div:nth-of-type(4){
+        width: 2rem;
+        height: 0.34rem;
+        background: #bfbfbf;
+        border-radius: 0.2rem 0.2rem;
+        text-align: center;
+        line-height: 0.34rem;
+        box-shadow: 0 2px 5px 0 #bbb;
+        margin:0.1rem auto ;
+        }
 `
